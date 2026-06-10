@@ -1,1 +1,93 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Poppins", sans-serif;
+}
 
+body{
+    background: linear-gradient(135deg,#ffd6e7,#fff5fa);
+    min-height:100vh;
+    overflow:hidden;
+}
+
+.page{
+    display:none;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    min-height:100vh;
+    padding:30px;
+}
+
+.page.active{
+    display:flex;
+}
+
+.photo{
+    width:220px;
+    height:220px;
+    object-fit:cover;
+    border-radius:20px;
+    margin-bottom:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
+
+h1{
+    color:#ff4f87;
+    margin-bottom:15px;
+}
+
+p{
+    max-width:650px;
+    margin-bottom:15px;
+    line-height:1.8;
+}
+
+button{
+    padding:12px 24px;
+    border:none;
+    border-radius:999px;
+    cursor:pointer;
+    background:#ff6ea3;
+    color:white;
+    font-size:15px;
+    transition:.3s;
+}
+
+button:hover{
+    transform:scale(1.05);
+}
+
+.buttons{
+    margin-top:20px;
+    display:flex;
+    gap:15px;
+}
+
+.question{
+    font-size:22px;
+    font-weight:bold;
+    margin-top:10px;
+}
+
+.footer{
+    margin-top:40px;
+    opacity:.7;
+    font-size:14px;
+}
+
+#musicBtn{
+    position:fixed;
+    top:20px;
+    right:20px;
+    z-index:100;
+}
+
+#result{
+    margin-top:20px;
+    font-size:20px;
+    font-weight:bold;
+    color:#ff4f87;
+}
