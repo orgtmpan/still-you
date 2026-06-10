@@ -1,1 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Still You</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <!-- Music -->
+    <audio id="bgMusic" loop>
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
+    <button id="musicBtn">🎵 Putar Musik</button>
+
+    <!-- Page 1 -->
+    <section class="page active" id="page1">
+        <img src="foto1.jpg" alt="" class="photo">
+
+        <h1>Happy Birthday, Kak Sasa 🎂🤍</h1>
+
+        <p>
+            Selamat ulang tahun yaa. Hari ini umur kamu nambah,
+            semoga bahagianya juga ikut nambah banyak.
+        </p>
+
+        <p>
+            Semoga semua hal yang lagi kamu perjuangin pelan-pelan
+            menemuin jalannya, dan semoga kamu selalu dikelilingi
+            orang-orang yang sayang sama kamu.
+        </p>
+
+        <button onclick="nextPage(2)">Lanjut ➜</button>
+    </section>
+
+    <!-- Page 2 -->
+    <section class="page" id="page2">
+        <img src="foto2.jpg" alt="" class="photo">
+
+        <h1>Tentang Kamu 🤍</h1>
+
+        <p>
+            Aku sempet mikir kenangan favorit aku sama kamu itu yang mana.
+            Tapi ternyata bukan satu hari tertentu.
+        </p>
+
+        <p>
+            Kenangan favorit aku ternyata ya... kamu.
+            Cara kamu peduli, cara kamu khawatir waktu aku sakit,
+            cara kamu hadir tanpa diminta.
+        </p>
+
+        <p>
+            Dan jujur aja, yang paling aku kangen bukan masa lalunya.
+            Aku kangen kamu yang jadi diri kamu sendiri.
+            Yang manja, yang clingy, yang gemes.
+        </p>
+
+        <button onclick="nextPage(3)">Lanjut ➜</button>
+    </section>
+
+    <!-- Page 3 -->
+    <section class="page" id="page3">
+        <img src="foto3.jpg" alt="" class="photo">
+
+        <h1>Satu Pertanyaan 🤍</h1>
+
+        <p>
+            Hidup aku tetap berjalan kok.
+            Tapi kalau ditanya lebih bahagia kapan,
+            jawabannya masih sama:
+            waktu ada kamu.
+        </p>
+
+        <p>
+            Aku masih milih kamu.
+            Aku masih sayang sama kamu.
+            Dan aku masih pengen ada di samping kamu.
+        </p>
+
+        <p class="question">
+            Jadi...
+            mau balikan sama aku?
+        </p>
+
+        <div class="buttons">
+            <button id="yesBtn">💗 Mau</button>
+            <button id="noBtn">🥺 Nggak</button>
+        </div>
+
+        <div id="result"></div>
+
+        <p class="footer">
+            Website ini dibuat dua hari dua malam, 5 bugkus kopi.
+        </p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
